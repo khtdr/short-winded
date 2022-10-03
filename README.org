@@ -12,3 +12,10 @@ node example.js
 import { summarize } from 'short-winded'
 const summary = summarize('...', 75); // approximate word count
 #+END_SRC
+
+
+* Installation
+Use your favorite package manager. I like ~pnpm~. This package depends on ~compromise~.
+#+BEGIN_SRC shell :results none
+pnpm install short-winded compromise
+#+END_SRC
