@@ -1,6 +1,6 @@
 Attempts to summarize text
 
-#+BEGIN_SRC shell :results verbatim
+#+BEGIN_SRC shell :results verbatim :exports both
 node example.js
 #+END_SRC
 
