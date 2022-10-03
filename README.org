@@ -1,0 +1,14 @@
+Attempts to summarize text
+
+#+BEGIN_SRC shell :results verbatim
+node example.js
+#+END_SRC
+
+#+RESULTS:
+: It creates a new Socket.io client, and upon receiving the file-change-event from the server, reloads the page. That solves the problem for the index.html page, but what about the rest of the HTML pages? Your browser will not have direct access to the files you are editing, so it will rely on a smart web-server that has access to your file system. The best choice will be the one that allows you to solve the "refresh" problem easiest.
+
+* Usage
+#+BEGIN_SRC javascript :results none
+import { summarize } from 'short-winded'
+const summary = summarize('...', 75); // approximate word count
+#+END_SRC
